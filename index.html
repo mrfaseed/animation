@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            filter: blur(2px);
+        }
+        .box1,.box2,.box3,.box4,.box5{
+            width: 60px;
+            height: 60px;
+            border: 3px solid black;
+            animation-name: boxa;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .box{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box1{
+            animation-delay: 2s;
+        }
+        .box2{
+            animation-delay: 5s;
+        }
+        .box3{
+            animation-delay: 1s;
+        }
+        .box4{
+            animation-delay: 4s;
+        }
+        .box5{
+            animation-delay: 6s;
+        }
+        @keyframes boxa {
+            0%{
+                transform: translateY(0) rotate(30deg);
+            }
+            100%{
+                transform: translateY(85vh) rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</div>    
+</body>
+</html>
